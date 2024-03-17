@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link href="../styles/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="thanks">
+      <div>
+        <img
+          src="../assets/images/icon-success.svg"
+          alt="icon success"
+          class="thanks__success-icon"
+        />
+        <h1 class="thanks__title">Thanks for subscribing!</h1>
+        <p class="thanks__content">
+          A confirmation email has been sent to
+          <strong class="thanks__content__email"></strong>. Please open it and
+          click the button inside to confirm your subscription.
+        </p>
+      </div>
+
+      <button class="thanks__btn">Dismiss message</button>
+    </main>
+  </body>
+
+  <script>
+    const $emailStrong = document.querySelector(".thanks__content__email");
+
+    $emailStrong.textContent = localStorage.getItem("emailValue");
+  </script>
+</html>

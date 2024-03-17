@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+
+  <body>
+    <main class="newletter">
+      <picture class="newletter__picture">
+        <source
+          class="newletter__picture__image"
+          srcset="assets/images/illustration-sign-up-desktop.svg"
+          media="(min-width: 1000px)"
+        />
+        <img
+          class="newletter__picture__image"
+          src="assets/images/illustration-sign-up-mobile.svg"
+        />
+      </picture>
+      <div>
+        <h1 class="newletter__title">Stay updated!</h1>
+        <p class="newletter__info">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="newletter__list">
+          <li class="newletter__list__topics">
+            Product discovery and building what matters
+          </li>
+          <li class="newletter__list__topics">
+            Measuring to ensure updates are a success
+          </li>
+          <li class="newletter__list__topics">And much more!</li>
+        </ul>
+
+        <form action="pages/thanks.html" class="newletter__form" id="form">
+          <label for="" class="newletter__form__label">Email address</label>
+          <small
+            class="newletter__form__invalid-email newletter__form__invalid-email--hidden"
+          >
+            Valid email required
+          </small>
+
+          <input
+            type="email"
+            id="email-input"
+            class="newletter__form__email"
+            placeholder="email@company.com"
+          />
+          <button class="newletter__form__btn" id="submit-btn">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

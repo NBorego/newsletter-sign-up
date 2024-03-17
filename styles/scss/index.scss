@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+@import "form";
+@import "content";
+@import "thanks-page";
+
+:root {
+  // colors
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --gradient: linear-gradient(to left, #fd8f47, var(--tomato), #ff3e83);
+
+  // font
+  --text-font: "Roboto", sans-serif;
+
+  // break-points
+  --mobile: 375px;
+  --desktop: 1440px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--text-font);
+  margin: 0;
+  padding: 0;
+  color: var(--dark-slate-grey);
+}
+
+body {
+  align-items: center;
+  background-color: var(--charcoal-grey);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
